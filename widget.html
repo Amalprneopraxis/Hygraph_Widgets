@@ -1,0 +1,149 @@
+<style>
+    #bc-simple-text-{{_.id}} {
+        color: {{color}};
+
+        
+        text-align: {{text_align.horizontal}};
+        padding-top: {{padding.top.value}}{{padding.top.type}};
+        padding-right: {{padding.right.value}}{{padding.right.type}};
+        padding-bottom: {{padding.bottom.value}}{{padding.bottom.type}};
+        padding-left: {{padding.left.value}}{{padding.left.type}};
+        margin-top: {{margin.top.value}}{{margin.top.type}};
+        margin-right: {{margin.right.value}}{{margin.right.type}};
+        margin-bottom: {{margin.bottom.value}}{{margin.bottom.type}};
+        margin-left: {{margin.left.value}}{{margin.left.type}};
+    }
+
+    #widget-template-title {
+        text-transform: capitalize;
+        text-align: center;
+    }
+    #widget-template-title {
+        text-transform: capitalize;
+        text-align: center;
+    }
+    .maincard{
+      border: 1px outset black;
+         border-radius: 25px;
+    }
+    .mrgn{
+        margin: 3%;
+
+    }
+    .title{
+
+        font-family: "Roobert-Medium";
+         line-height: 1em;
+
+    }
+    .content{
+        line-height: 1.5;
+        font-family: "Roobert-Medium";
+
+    }
+    .button{
+
+border: 2px solid white;
+border-radius: 4px;
+color: white;
+font-size: 18px;
+cursor: pointer;
+text-decoration: none;
+padding:5px 20px 5px 20px;
+
+
+    }
+
+    /* .main_post{
+      width:fit-content;
+
+    } */
+
+    .text_align-ctr{
+      text-align: center;
+    }
+
+    .text_align-left{
+      text-align: left;
+    }
+    .img_style{
+      object-fit: contain;
+    }
+    @media screen and (max-width: 768px) {
+      .img_style {
+height: 150px;
+padding: 20px;
+    }
+  }
+</style>
+
+<div class="main_post" id='bc-simple-text-{{_.id}}'>
+<div class="post{{ _.id}}">
+
+</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script>
+
+fetch(
+"https://api-ap-south-1.hygraph.com/v2/clemi9tt321t801uhbxmqaykf/master",
+{
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+    // 'Authorization': 'Bearer {{eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImdjbXMtbWFpbi1wcm9kdWN0aW9uIn0.eyJ2ZXJzaW9uIjozLCJpYXQiOjE2Nzc1NjY2NjgsImF1ZCI6WyJodHRwczovL2FwaS1hcC1zb3V0aC0xLmh5Z3JhcGguY29tL3YyL2NsZW1pOXR0MzIxdDgwMXVoYnhtcWF5a2YvbWFzdGVyIiwibWFuYWdlbWVudC1uZXh0LmdyYXBoY21zLmNvbSJdLCJpc3MiOiJodHRwczovL21hbmFnZW1lbnQuZ3JhcGhjbXMuY29tLyIsInN1YiI6ImQ0ZDI2NWNhLTk1MDYtNDA4OC1iNjZhLWI3Njc0NTExZTRlNCIsImp0aSI6ImNsZW52dnBjMjBsejUwMXQ4MzA2eWNiZjEifQ.GfEMwdJ1-Z-81Z80CvhDCY-hb8aohiaEQtdP3eRINRFaLGoD9IdijEn3V-S_Wnqy8udc4LmZNHk-DSCpnyJLvoEAqMng0Epta0QB1aOXJJA1cJhECSHDhFHtioZlx8ZvAnlsxXd4q5nnAaye-XhGfocP2lNs_b1DA-tHvq2_9ne1vGeR4X1VZk3ZhTXJHIPCPL637FDbRqOkZSlgUE9NEidcg1tOZg-m6hqAtZ4uMcy-ZpjJT7_fJTiZvfqkBXfkZK_KHEW4RQwbVwZqzvPGzoPXIstP5cNy9N2Td4KzgsPJFvYTpocyS9BoJicniNA6LoinxlCAqOkAFEkrRQ_arKc8XTUfveUyn9REY1LBvzpWv3GZ3AunyUO__eD3JBHhZ3uaTSROCDBLuIZ_nzkljDKs9UgE2wWXzbh79o4RMmqiMft7Xi9to6zwbYSBtCGfnnpHEW8XvcY3X_gtDPLJpoDZ7RJKkxre5p1t2310yBnoiLw-rwBY1yBxdnZ8QWQwj88Z6Fg6z2sF4wougC3jJjf03FVkYGUxRHChWWFFfxfFMHs13IGSb-vEO3KE9rUnhOyVcw7NYj_y8QcpgYV69DPpzWiqjJYQ6LjqUaG8Zb6a9-EbbTqtYZwLCZZL7qP920KtWEeVDSKDTuSr1AWzd1zlwoWwcS0wIvC9lhHNTdg}}',
+  },
+  body: JSON.stringify({
+    query: `
+            {
+          posts{
+            id
+            content_id
+            title
+            url
+            coverphoto {
+              id
+              url
+            }
+            content
+            {
+             text
+              
+            }
+          }     
+        } 
+        `,
+  }),
+}
+)
+.then((response) => response.json())
+.then((e) => {
+  // Handle the GraphQL response data here
+  var title = e.data.posts;
+  title.forEach((post) => {
+    var title = post.title;
+    var content = post.content.text;
+    var id = post.content_id;
+    var photo = post.coverphoto.url;
+    var url=post.url;
+  
+    if (`{{test}}` == id) {
+      $(".post{{ _.id}}")
+        .html(`<div class= "maincard" style="background-color:{{bg_color}}"><div class="sub text_align-left">             
+             <div class="text">
+                        <div class="title mrgn  "style="color:{{color}};text-align: {{text_align_Heading.horizontal}}; font-size: {{font_size_Heading.value}}{{font_size_Heading.type}}"> ${title}</div>
+                     
+                        </div><div class="content mrgn match" style="color:{{color}}; text-align: {{text_align.horizontal}}; font-size: {{font_size.value}}{{font_size.type}}"> ${content}</div>
+                        </div>
+                       
+                        <div class = "image  text_align-ctr"> <img class="img_style" src ="${photo}" alt ="blogimage" style="height:215px"></div>
+                        <div class="text_align-ctr mrgn but-style"><a href="${url}" class="button">{{button}}</a></div></div></div>`);
+    }
+  });
+});
+</script>
+
+
+
+

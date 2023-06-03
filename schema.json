@@ -1,0 +1,134 @@
+[
+  {
+    "type": "tab",
+    "label": "Design",
+    "sections": [
+      {
+        "label": "Widget",
+        "settings": [ 
+          {
+            "type": "input",
+            "id": "test",
+            "label": "Content-ID",
+            "default": "422 cam"
+          },
+          {
+            "type": "input",
+            "id": "class",
+            "label": "Class",
+            "default": "Class Name"
+          },
+          {
+            "type": "input",
+            "id": "button",
+            "label": "Button Name",
+            "default": "View Details"
+          },                        
+          {
+            "type": "input",
+            "id": "color",
+            "label": "Text Color",
+            "default": "#ffffff" 
+          },
+          {
+            "type": "input",
+            "id": "bg_color",
+            "label": "Background-color",
+            "default": "#990AE2"
+          },
+          
+         
+          {
+            "type": "number",
+            "id": "font_size_Heading",
+            "label": "Heading Font Size",
+            "default": {
+              "value": 43,
+              "type": "px"
+            }
+          },
+          {
+            "type": "number",
+            "id": "font_size",
+            "label": "Content Font Size",
+            "default": {
+              "value": 24,
+              "type": "px"
+            }
+          },
+          {
+            "type": "alignment",
+            "label": "Heading Text Alignment ",
+            "id": "text_align_Heading",
+            "default": {
+              "horizontal": "center",
+              "vertical": "middle"
+            },
+            "typeMeta": {
+              "display": "horizontal"
+            }
+          },
+          {
+            "type": "alignment",
+            "label": "Content Text Alignment",
+            "id": "text_align",
+            "default": {
+              "horizontal": "center",
+              "vertical": "middle"
+            },
+            "typeMeta": {
+              "display": "horizontal"
+            }
+          },
+         
+          {
+            "type": "boxModel",
+            "label": "Margin",
+            "id": "margin",
+            "default": {
+              "top": {
+                "value": "0",
+                "type": "px"
+              },
+              "right": {
+                "value": "0",
+                "type": "px"
+              },
+              "bottom": {
+                "value": "0",
+                "type": "px"
+              },
+              "left": {
+                "value": "0",
+                "type": "px"
+              }
+            }
+          },
+          {
+            "type": "boxModel",
+            "label": "Padding",
+            "id": "padding",
+            "default": {
+              "top": {
+                "value": "8",
+                "type": "px"
+              },
+              "right": {
+                "value": "24",
+                "type": "px"
+              },
+              "bottom": {
+                "value": "8",
+                "type": "px"
+              },
+              "left": {
+                "value": "24",
+                "type": "px"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

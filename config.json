@@ -1,0 +1,59 @@
+{
+  "test": "422 cam",
+  "class": "Class Name",
+  "button": "View Details",
+  "color": "#ffffff",
+  "bg_color": "#990AE2",
+  "font_size_Heading": {
+    "value": 43,
+    "type": "px"
+  },
+  "font_size": {
+    "value": 24,
+    "type": "px"
+  },
+  "text_align_Heading": {
+    "horizontal": "center",
+    "vertical": "middle"
+  },
+  "text_align": {
+    "horizontal": "center",
+    "vertical": "middle"
+  },
+  "margin": {
+    "top": {
+      "value": "0",
+      "type": "px"
+    },
+    "right": {
+      "value": "0",
+      "type": "px"
+    },
+    "bottom": {
+      "value": "0",
+      "type": "px"
+    },
+    "left": {
+      "value": "0",
+      "type": "px"
+    }
+  },
+  "padding": {
+    "top": {
+      "value": "8",
+      "type": "px"
+    },
+    "right": {
+      "value": "24",
+      "type": "px"
+    },
+    "bottom": {
+      "value": "8",
+      "type": "px"
+    },
+    "left": {
+      "value": "24",
+      "type": "px"
+    }
+  }
+}
