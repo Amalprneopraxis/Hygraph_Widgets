@@ -1,0 +1,965 @@
+[
+  {
+    "type": "hidden",
+    "settings": [
+      {
+        "id": "Text_Title",
+        "default": "Title."
+      },
+      {
+        "id": "Text_Content",
+        "default": "Content."
+      }
+    ]
+  },
+  
+  {
+    "type": "tab",
+    "label": "Design",
+    "sections": [
+      {
+        "label": "Widget",
+        "settings": [
+          {
+            "type": "input",
+            "id": "test",
+            "label": "Content-ID",
+            "default": "Home-Right-Top"
+          }, 
+          
+          {
+            "type": "input",
+            "id": "country",           
+            "label": "Country",
+            "default": "cas"
+          },  
+          {
+            "type": "input",
+            "id": "class",
+            "label": "Class",
+            "default": "ClassName"
+          }, 
+
+          {
+            "type": "input",
+            "id": "bg_color",
+            "label": "Background-Color",
+            "default": "#990AE2"
+          },
+       
+          {
+            "type": "boxModel",
+            "label": "Margin",
+            "id": "margin",
+            "default": {
+              "top": {
+                "value": "0",
+                "type": "px"
+              },
+              "right": {
+                "value": "0",
+                "type": "px"
+              },
+              "bottom": {
+                "value": "0",
+                "type": "px"
+              },
+              "left": {
+                "value": "0",
+                "type": "px"
+              }
+            }
+          },
+          {
+            "type": "boxModel",
+            "label": "Padding",
+            "id": "padding",
+            "default": {
+              "top": {
+                "value": "8",
+                "type": "px"
+              },
+              "right": {
+                "value": "24",
+                "type": "px"
+              },
+              "bottom": {
+                "value": "8",
+                "type": "px"
+              },
+              "left": {
+                "value": "24",
+                "type": "px"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "label": "Heading",
+        "settings":[
+          {
+            "type": "typography",
+            "label": "Text style",
+            "id": "TextStyle_Content",
+            "default": "custom",
+            "typeMeta": {
+              "conditionalSettings": [
+                {
+                  "condition": "custom",
+                  "settings": [
+                    {
+                      "type": "select",
+                      "label": "Font family",
+                      "id": "fontFamily_Heading",
+                      "default": "Roobert",
+                      "typeMeta": {
+                        "selectOptions": [
+                          {
+                            "label": "Theme Default",
+                            "value": "inherit"
+                          },
+                          {
+                            "label": "Arial",
+                            "value": "Arial, sans-serif"
+                          },
+                          {
+                            "label": "Tahoma",
+                            "value": "Tahoma, sans-serif"
+                          },
+                          {
+                            "label": "Verdana",
+                            "value": "Verdana, sans-serif"
+                          },
+                          {
+                            "label": "Lucida",
+                            "value": "Lucida, sans-serif"
+                          },
+                          {
+                            "label": "Times New Roman",
+                            "value": "Times New Roman, serif"
+                          },
+                          {
+                            "label": "Courier",
+                            "value": "Courier, serif"
+                          },
+                          {
+                            "label": "Georgia",
+                            "value": "Georgia, serif"
+                          },
+                          {
+                            "label": "Roobert",
+                            "value": "Roobert-Medium"
+                          },
+                          {
+                            "label": "Palatino",
+                            "value": "Palatino, serif"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "select",
+                      "label": "Font weight",
+                      "id": "fontWeight_Heading",
+                      "default": "500",
+                      "typeMeta": {
+                        "selectOptions": [
+                          {
+                            "label": "Thin",
+                            "value": "100"
+                          },
+                          {
+                            "label": "Extra Light (Ultra Light)",
+                            "value": "200"
+                          },
+                          {
+                            "label": "Light",
+                            "value": "300"
+                          },
+                          {
+                            "label": "Normal",
+                            "value": "400"
+                          },
+                          {
+                            "label": "Medium",
+                            "value": "500"
+                          },
+                          {
+                            "label": "Semi Bold (Demi Bold)",
+                            "value": "600"
+                          },
+                          {
+                            "label": "Bold",
+                            "value": "700"
+                          },
+                          {
+                            "label": "Extra Bold (Ultra Bold)",
+                            "value": "800"
+                          },
+                          {
+                            "label": "Black (Heavy)",
+                            "value": "900"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "number",
+                      "label": "Font size",
+                      "id": "fontSize_Heading",
+                      "default": {
+                        "value": 43,
+                        "type": "px"
+                      },
+                      "typeMeta": {
+                        "parseType": "integer"
+                      }
+                    },
+                    {
+                      "type": "color",
+                      "label": "Text color",
+                      "id": "fontColor_Heading",
+                      "default": "#000000"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "type": "alignment",
+            "label": "Alignment",
+            "id": "alignment_Heading",
+            "default": {
+              "horizontal": "center",
+              "vertical": "middle"
+            },
+            "typeMeta": {
+              "display": "horizontal"
+            }
+          },
+          {
+            "type": "boxModel",
+            "label": "Margin",
+            "id": "margin_Heading",
+            "default": {
+              "top": {
+                "value": "0",
+                "type": "px"
+              },
+              "right": {
+                "value": "0",
+                "type": "px"
+              },
+              "bottom": {
+                "value": "0",
+                "type": "px"
+              },
+              "left": {
+                "value": "0",
+                "type": "px"
+              }
+            }
+          },
+          {
+            "type": "boxModel",
+            "label": "Padding",
+            "id": "padding_Heading",
+            "default": {
+              "top": {
+                "value": "0",
+                "type": "px"
+              },
+              "right": {
+                "value": "0",
+                "type": "px"
+              },
+              "bottom": {
+                "value": "0",
+                "type": "px"
+              },
+              "left": {
+                "value": "0",
+                "type": "px"
+              }
+            }
+          }
+          
+        ]
+      },
+      {
+        "label": "Content",
+        "settings":[
+          {
+            "type": "typography",
+            "label": "Text style",
+            "id": "TextStyle_Content",
+            "default": "custom",
+            "typeMeta": {
+              "conditionalSettings": [
+                {
+                  "condition": "custom",
+                  "settings": [
+                    {
+                      "type": "select",
+                      "label": "Font family",
+                      "id": "fontFamily_Content",
+                      "default": "Roobert",
+                      "typeMeta": {
+                        "selectOptions": [
+                          {
+                            "label": "Theme Default",
+                            "value": "inherit"
+                          },
+                          {
+                            "label": "Arial",
+                            "value": "Arial, sans-serif"
+                          },
+                          {
+                            "label": "Tahoma",
+                            "value": "Tahoma, sans-serif"
+                          },
+                          {
+                            "label": "Verdana",
+                            "value": "Verdana, sans-serif"
+                          },
+                          {
+                            "label": "Lucida",
+                            "value": "Lucida, sans-serif"
+                          },
+                          {
+                            "label": "Times New Roman",
+                            "value": "Times New Roman, serif"
+                          },
+                          {
+                            "label": "Courier",
+                            "value": "Courier, serif"
+                          },
+                          {
+                            "label": "Georgia",
+                            "value": "Georgia, serif"
+                          },
+                          {
+                            "label": "Roobert",
+                            "value": "Roobert-Medium"
+                          },
+                          {
+                            "label": "Palatino",
+                            "value": "Palatino, serif"
+                          }
+                        ]
+                      }
+                    },
+                   
+                    {
+                      "type": "color",
+                      "label": "Text color",
+                      "id": "fontColor_Content",
+                      "default": "#ffffff"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "type": "alignment",
+            "label": "Alignment",
+            "id": "alignment_Content",
+            "default": {
+              "horizontal": "center",
+              "vertical": "middle"
+            },
+            "typeMeta": {
+              "display": "horizontal"
+            }
+          },
+          {
+            "type": "boxModel",
+            "label": "Margin",
+            "id": "margin_Content",
+            "default": {
+              "top": {
+                "value": "0",
+                "type": "px"
+              },
+              "right": {
+                "value": "0",
+                "type": "px"
+              },
+              "bottom": {
+                "value": "0",
+                "type": "px"
+              },
+              "left": {
+                "value": "0",
+                "type": "px"
+              }
+            }
+          },
+          {
+            "type": "boxModel",
+            "label": "Padding",
+            "id": "padding_Content",
+            "default": {
+              "top": {
+                "value": "0",
+                "type": "px"
+              },
+              "right": {
+                "value": "0",
+                "type": "px"
+              },
+              "bottom": {
+                "value": "0",
+                "type": "px"
+              },
+              "left": {
+                "value": "0",
+                "type": "px"
+              }
+            }
+          },
+          {
+            "type": "element",
+            "label": "Desktop",
+            "id": "textBox_desk",
+            "typeMeta": {
+              "controls": {
+                "visibility": {
+                  "default": "show"
+                },
+                "advanced": {
+                  "label": "Desktop Style",
+                  "settings": [
+                    {
+                      "type": "number",
+                      "label": "Font size",
+                      "id": "fontSize_Content",
+                      "default": {
+                        "value": 24,
+                        "type": "px"
+                      },
+                      "typeMeta": {
+                        "parseType": "integer"
+                      }
+                    },
+                    {
+                      "type": "select",
+                      "label": "Font weight",
+                      "id": "fontWeight_Content",
+                      "default": "500",
+                      "typeMeta": {
+                        "selectOptions": [
+                          {
+                            "label": "Thin",
+                            "value": "100"
+                          },
+                          {
+                            "label": "Extra Light (Ultra Light)",
+                            "value": "200"
+                          },
+                          {
+                            "label": "Light",
+                            "value": "300"
+                          },
+                          {
+                            "label": "Normal",
+                            "value": "400"
+                          },
+                          {
+                            "label": "Medium",
+                            "value": "500"
+                          },
+                          {
+                            "label": "Semi Bold (Demi Bold)",
+                            "value": "600"
+                          },
+                          {
+                            "label": "Bold",
+                            "value": "700"
+                          },
+                          {
+                            "label": "Extra Bold (Ultra Bold)",
+                            "value": "800"
+                          },
+                          {
+                            "label": "Black (Heavy)",
+                            "value": "900"
+                          }
+                        ]
+                      }
+                    }          
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "type": "element",
+            "label": "Mobile",
+            "id": "textBox_mob",
+            "typeMeta": {
+              "controls": {
+                "visibility": {
+                  "default": "show"
+                },
+                "advanced": {
+                  "label": "Mobile Style",
+                  "settings": [
+                    {
+                      "type": "number",
+                      "label": "Font size",
+                      "id": "fontSize_Content",
+                      "default": {
+                        "value": 24,
+                        "type": "px"
+                      },
+                      "typeMeta": {
+                        "parseType": "integer"
+                      }
+                    },
+                    {
+                      "type": "select",
+                      "label": "Font weight",
+                      "id": "fontWeight_Content",
+                      "default": "500",
+                      "typeMeta": {
+                        "selectOptions": [
+                          {
+                            "label": "Thin",
+                            "value": "100"
+                          },
+                          {
+                            "label": "Extra Light (Ultra Light)",
+                            "value": "200"
+                          },
+                          {
+                            "label": "Light",
+                            "value": "300"
+                          },
+                          {
+                            "label": "Normal",
+                            "value": "400"
+                          },
+                          {
+                            "label": "Medium",
+                            "value": "500"
+                          },
+                          {
+                            "label": "Semi Bold (Demi Bold)",
+                            "value": "600"
+                          },
+                          {
+                            "label": "Bold",
+                            "value": "700"
+                          },
+                          {
+                            "label": "Extra Bold (Ultra Bold)",
+                            "value": "800"
+                          },
+                          {
+                            "label": "Black (Heavy)",
+                            "value": "900"
+                          }
+                        ]
+                      }
+                    }          
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "label": "Image",
+        "settings":[
+          
+          {
+            "type": "select",
+            "label": "Image dimensions",
+            "id": "imageDimensionType_img",
+            "default": "auto",
+            "typeMeta": {
+              "selectOptions": [
+                {
+                  "label": "Auto",
+                  "value": "auto"
+                },
+                {
+                  "label": "Custom",
+                  "value": "custom"
+                }
+              ]
+            }
+          },
+          {
+            "type": "number",
+            "label": "Image height",
+            "id": "imageHeight_img",
+            "default": {
+              "value": 300,
+              "type": "px"
+            },
+            "typeMeta": {
+              "parseType": "integer"
+            },
+            "conditional": {
+              "key": "imageDimensionType",
+              "operator": "IN",
+              "value": [
+                "custom"
+              ]
+            }
+          },
+          {
+            "type": "select",
+            "label": "Image fit",
+            "id": "imageFit_img",
+            "default": "fit",
+            "typeMeta": {
+              "selectOptions": [
+                {
+                  "label": "Fill to box",
+                  "value": "fill"
+                },
+                {
+                  "label": "Fit to box",
+                  "value": "fit"
+                }
+              ]
+            }
+          },
+          {
+            "type": "select",
+            "label": "Image parallax",
+            "id": "imageParallax_img",
+            "default": "off",
+            "typeMeta": {
+              "selectOptions": [
+                {
+                  "label": "Off",
+                  "value": "off"
+                },
+                {
+                  "label": "On",
+                  "value": "on"
+                }
+              ]
+            },
+            "conditional": {
+              "key": "imageFit",
+              "operator": "IN",
+              "value": [
+                "fill"
+              ]
+            }
+          },
+          {
+            "type": "range",
+            "label": "Image opacity",
+            "id": "imageOpacity_img",
+            "default": 100,
+            "typeMeta": {
+              "rangeValues": {
+                "min": 0,
+                "max": 100,
+                "step": 1,
+                "unit": "%"
+              }
+            }
+          },
+          {
+            "type": "alignment",
+            "label": "Alignment",
+            "id": "alignment_img",
+            "default": {
+              "horizontal": "center",
+              "vertical": "middle"
+            },
+            "typeMeta": {
+              "display": "horizontal"
+            }
+          },
+          {
+            "type": "boxModel",
+            "label": "Margin (px)",
+            "id": "containerMargin_img",
+            "default": {
+              "top": {
+                "value": "0",
+                "type": "px"
+              },
+              "right": {
+                "value": "0",
+                "type": "px"
+              },
+              "bottom": {
+                "value": "0",
+                "type": "px"
+              },
+              "left": {
+                "value": "0",
+                "type": "px"
+              }
+            }
+          },
+          {
+            "type": "boxModel",
+            "label": "Padding (px)",
+            "id": "containerPadding_img",
+            "default": {
+              "top": {
+                "value": "0",
+                "type": "px"
+              },
+              "right": {
+                "value": "0",
+                "type": "px"
+              },
+              "bottom": {
+                "value": "0",
+                "type": "px"
+              },
+              "left": {
+                "value": "0",
+                "type": "px"
+              }
+            }
+          },
+          {
+            "type": "select",
+            "label": "Border style",
+            "id": "borderStyle_img",
+            "default": "none",
+            "typeMeta": {
+              "selectOptions": [
+                {
+                  "label": "None",
+                  "value": "none"
+                },
+                {
+                  "label": "Solid",
+                  "value": "solid"
+                },
+                {
+                  "label": "Dotted",
+                  "value": "dotted"
+                },
+                {
+                  "label": "Dashed",
+                  "value": "dashed"
+                },
+                {
+                  "label": "Double",
+                  "value": "double"
+                },
+                {
+                  "label": "Groove",
+                  "value": "groove"
+                },
+                {
+                  "label": "Ridge",
+                  "value": "ridge"
+                }
+              ]
+            }
+          },
+          {
+            "type": "color",
+            "label": "Border color",
+            "id": "borderColor_img",
+            "default": "#000000"
+          },
+          {
+            "type": "range",
+            "label": "Border thickness",
+            "id": "borderThickness_img",
+            "default": 1,
+            "typeMeta": {
+              "rangeValues": {
+                "min": 0,
+                "max": 10,
+                "step": 1,
+                "unit": "px"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "label": "Button",
+        "settings":[
+          {
+            "type": "input",
+            "id": "button",
+            "label": "Button Name",
+            "default": "View Details"
+          },
+          {
+            "type": "color",
+            "label": "Button Text color",
+            "id": "color_Btn",
+            "default": "#ffffff"
+          },
+          {
+            "type": "number",
+            "label": "Font size",
+            "id": "fontSize_Btn",
+            "default": {
+              "value": 24,
+              "type": "px"
+            },
+            "typeMeta": {
+              "parseType": "integer"
+            }
+          },
+          {
+            "type": "alignment",
+            "label": "Alignment",
+            "id": "alignment_Btn",
+            "default": {
+              "horizontal": "center",
+              "vertical": "middle"
+            },
+            "typeMeta": {
+              "display": "horizontal"
+            }
+          },
+          {
+            "type": "select",
+            "label": "Font weight",
+            "id": "fontWeight_Btn",
+            "default": "500",
+            "typeMeta": {
+              "selectOptions": [
+                {
+                  "label": "Thin",
+                  "value": "100"
+                },
+                {
+                  "label": "Extra Light (Ultra Light)",
+                  "value": "200"
+                },
+                {
+                  "label": "Light",
+                  "value": "300"
+                },
+                {
+                  "label": "Normal",
+                  "value": "400"
+                },
+                {
+                  "label": "Medium",
+                  "value": "500"
+                },
+                {
+                  "label": "Semi Bold (Demi Bold)",
+                  "value": "600"
+                },
+                {
+                  "label": "Bold",
+                  "value": "700"
+                },
+                {
+                  "label": "Extra Bold (Ultra Bold)",
+                  "value": "800"
+                },
+                {
+                  "label": "Black (Heavy)",
+                  "value": "900"
+                }
+              ]
+            }
+          },
+          {
+            "type": "boxModel",
+            "label": "Margin",
+            "id": "margin_Btn",
+            "default": {
+              "top": {
+                "value": "0",
+                "type": "px"
+              },
+              "right": {
+                "value": "0",
+                "type": "px"
+              },
+              "bottom": {
+                "value": "0",
+                "type": "px"
+              },
+              "left": {
+                "value": "0",
+                "type": "px"
+              }
+            }
+          },
+          {
+            "type": "boxModel",
+            "label": "Padding",
+            "id": "padding_Btn",
+            "default": {
+              "top": {
+                "value": "0",
+                "type": "px"
+              },
+              "right": {
+                "value": "0",
+                "type": "px"
+              },
+              "bottom": {
+                "value": "0",
+                "type": "px"
+              },
+              "left": {
+                "value": "0",
+                "type": "px"
+              }
+            }
+          },
+        
+          {
+            "type": "element",
+            "label": "Mobile",
+            "id": "textBox_Mob",
+            "typeMeta": {
+              "controls": {
+                "visibility": {
+                  "default": "show"
+                },
+                "advanced": {
+                  "label": "Mobile Style",
+                  "settings": [
+                    {
+                      "type": "color",
+                      "label": "Box color",
+                      "id": "backgroundColor",
+                      "default": "#FFFFFF"
+                    },
+                    {
+                      "type": "number",
+                      "label": "Font size",
+                      "id": "fontSize_Btn",
+                      "default": {
+                        "value": 24,
+                        "type": "px"
+                      },
+                      "typeMeta": {
+                        "parseType": "integer"
+                      }
+                    }             
+                  ]
+                }
+              }
+            }
+          }                
+        ]
+      }
+    ]    
+  }  
+]
+
+

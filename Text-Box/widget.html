@@ -1,0 +1,371 @@
+<style>
+    #bc-simple-text-{{_.id}} {
+            color: {{color}};
+
+            
+            text-align: {{text_align.horizontal}};
+            padding-top: {{padding.top.value}}{{padding.top.type}};
+            padding-right: {{padding.right.value}}{{padding.right.type}};
+            padding-bottom: {{padding.bottom.value}}{{padding.bottom.type}};
+            padding-left: {{padding.left.value}}{{padding.left.type}};
+            margin-top: {{margin.top.value}}{{margin.top.type}};
+            margin-right: {{margin.right.value}}{{margin.right.type}};
+            margin-bottom: {{margin.bottom.value}}{{margin.bottom.type}};
+            margin-left: {{margin.left.value}}{{margin.left.type}};
+        }
+
+    #widget-template-title {
+        text-transform: capitalize;
+        text-align: center;
+    }
+
+    #widget-template-title {
+        text-transform: capitalize;
+        text-align: center;
+    }
+    #Content-text-{{_.id}}{
+        color: {{fontColor_Content}};
+
+            font-family: {{fontFamily_Content}};
+            font-size: {{textBox_desk.fontSize_Content.value}}{{textBox_desk.fontSize_Content.type}};
+            font-weight: {{textBox_desk.fontWeight_Content}};
+            text-align: {{alignment_Content.horizontal}};
+            padding-top: {{padding_Content.top.value}}{{padding_Content.top.type}};
+            padding-right: {{padding_Content.right.value}}{{padding_Content.right.type}};
+            padding-bottom: {{padding_Content.bottom.value}}{{padding_Content.bottom.type}};
+            padding-left: {{padding_Content.left.value}}{{padding_Content.left.type}};
+            margin-top: {{margin_Content.top.value}}{{margin_Content.top.type}};
+            margin-right: {{margin_Content.right.value}}{{margin_Content.right.type}};
+            margin-bottom: {{margin_Content.bottom.value}}{{margin_Content.bottom.type}};
+            margin-left: {{margin_Content.left.value}}{{margin_Content.left.type}};  
+    }
+    #Heading-text-{{_.id}}{
+        color: {{fontColor_Heading}};
+
+            font-family: {{fontFamily_Heading}};
+            font-size: {{fontSize_Heading.value}}{{fontSize_Heading.type}};
+            font-weight: {{fontWeight_Heading}};
+            text-align: {{alignment_Heading.horizontal}};
+            padding-top: {{padding_Heading.top.value}}{{padding_Heading.top.type}};
+            padding-right: {{padding_Heading.right.value}}{{padding_Heading.right.type}};
+            padding-bottom: {{padding_Heading.bottom.value}}{{padding_Heading.bottom.type}};
+            padding-left: {{padding_Heading.left.value}}{{padding_Heading.left.type}};
+            margin-top: {{margin_Heading.top.value}}{{margin_Heading.top.type}};
+            margin-right: {{margin_Heading.right.value}}{{margin_Heading.right.type}};
+            margin-bottom: {{margin_Heading.bottom.value}}{{margin_Heading.bottom.type}};
+            margin-left: {{margin_Heading.left.value}}{{margin_Heading.left.type}};  
+    }
+
+    #Btn_style{{_.id}}{
+        color: {{color_Btn}};      
+            font-size: {{fontSize_Btn.value}}{{fontSize_Btn.type}};
+            font-weight: {{fontWeight_Btn}};
+            padding-top: {{padding_Btn.top.value}}{{padding_Btn.top.type}};
+            padding-right: {{padding_Btn.right.value}}{{padding_Btn.right.type}};
+            padding-bottom: {{padding_Btn.bottom.value}}{{padding_Btn.bottom.type}};
+            padding-left: {{padding_Btn.left.value}}{{padding_Heading.left.type}};
+            margin-top: {{margin_Btn.top.value}}{{margin_Btn.top.type}};
+            margin-right: {{margin_Btn.right.value}}{{margin_Btn.right.type}};
+            margin-bottom: {{margin_Btn.bottom.value}}{{margin_Btn.bottom.type}};
+            margin-left: {{margin_Btn.left.value}}{{margin_Btn.left.type}}; 
+            cursor: pointer;
+            text-decoration: none;
+             border: 2px solid white;
+             border-radius: 4px; 
+    }
+    #sd-image-{{_.id}} {
+            
+              opacity: calc({{imageOpacity_img}} / 100);
+      
+              {{#if imageFit_img '===' 'fill'}}
+                  background-size: cover;
+                  {{#if imageParallax_img '===' 'on'}}
+                      background-attachment: fixed;
+                  {{/if}}
+              {{else}}
+                  background-size: contain;
+              {{/if}}
+      
+              {{#if imageDimensionType_img '===' 'auto'}}
+                  height: auto;
+              {{else}}
+                  height: {{imageHeight_img.value}}{{imageHeight_img.type}};
+              {{/if}}
+      
+              
+      
+              {{#if borderStyle_img '!==' 'none'}}
+                  border: {{borderThickness_img}}px {{borderStyle_img}} {{borderColor_img}};
+              {{/if}}
+      
+              padding-top: {{containerPadding_img.top.value}}{{containerPadding_img.top.type}};
+              padding-right: {{containerPadding_img.right.value}}{{containerPadding_img.right.type}};
+              padding-bottom: {{containerPadding_img.bottom.value}}{{containerPadding_img.bottom.type}};
+              padding-left: {{containerPadding_img.left.value}}{{containerPadding_img.left.type}};
+      
+              margin-top: {{containerMargin_img.top.value}}{{containerMargin_img.top.type}};
+              margin-right: {{containerMargin_img.right.value}}{{containerMargin_img.right.type}};
+              margin-bottom: {{containerMargin_img.bottom.value}}{{containerMargin_img.bottom.type}};
+              margin-left: {{containerMargin_img.left.value}}{{containerMargin_img.left.type}};
+          }
+          #sd-image-Align{{_.id}}{
+            text-align: {{alignment_img.horizontal}};
+                  
+          }
+
+          #sd-image-{{_.id}} img {
+              width: auto;
+              opacity: 0;
+      
+              {{#if imageDimensionType_img '===' 'auto'}}
+                  height: auto;
+              {{else}}
+                  height: 100%;
+              {{/if}}
+          }
+
+    .maincard {
+        border: 1px outset black;
+        border-radius: 25px;
+    }
+
+    .mrgn {
+        margin: 3%;
+
+    }
+
+    .title {
+
+        font-family: "Roobert-Medium";
+        line-height: 1em;
+
+    }
+
+    .content {
+        line-height: 1.5;
+        font-family: "Roobert-Medium";
+
+    }
+    .btn-display{
+        display: none;
+    }
+
+    .button {
+       
+        color: white;
+        font-size: 18px;
+       
+        padding: 5px 20px 5px 20px;
+
+
+    }
+
+    /* .main_post{
+          width:fit-content;
+   
+        } */
+
+    .text_align-ctr {
+        text-align: center;
+    }
+
+    .text_align-left {
+        text-align: left;
+    }
+    .image_box{
+       
+        object-fit: contain;
+    }
+
+    /* For mobile view */
+
+    @media screen and (max-width: 768px) {
+        .image_box {
+    height: 150px;
+    padding: 20px;
+        }
+        #sd-image-{{_.id}} {
+                  {{#if imageFit_img '===' 'fill'}}
+                      {{#if imageParallax_img '===' 'on'}}
+                          background-attachment: scroll;
+                      {{/if}}
+                  {{/if}}
+              }
+              #Content-text-{{_.id}}{
+                font-size: {{textBox_mob.fontSize_Content.value}}{{textBox_mob.fontSize_Content.type}};
+            font-weight: {{textBox_mob.fontWeight_Content}};
+
+              }
+}
+
+</style> 
+
+<div class="main_post" id='bc-simple-text-{{_.id}}'>
+    <div class="post{{ _.id}}">
+
+    </div>
+</div>        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script>
+     var country_code= "{{country}}";
+     console.log("code", country_code);
+     (function () {    
+    fetch(
+        "https://api-us-east-1-shared-usea1-02.hygraph.com/v2/clezi6kw10ys101ujg5b09lk6/master",
+        
+        {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                // 'Authorization': 'Bearer {{eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImdjbXMtbWFpbi1wcm9kdWN0aW9uIn0.eyJ2ZXJzaW9uIjozLCJpYXQiOjE2Nzc1NjY2NjgsImF1ZCI6WyJodHRwczovL2FwaS1hcC1zb3V0aC0xLmh5Z3JhcGguY29tL3YyL2NsZW1pOXR0MzIxdDgwMXVoYnhtcWF5a2YvbWFzdGVyIiwibWFuYWdlbWVudC1uZXh0LmdyYXBoY21zLmNvbSJdLCJpc3MiOiJodHRwczovL21hbmFnZW1lbnQuZ3JhcGhjbXMuY29tLyIsInN1YiI6ImQ0ZDI2NWNhLTk1MDYtNDA4OC1iNjZhLWI3Njc0NTExZTRlNCIsImp0aSI6ImNsZW52dnBjMjBsejUwMXQ4MzA2eWNiZjEifQ.GfEMwdJ1-Z-81Z80CvhDCY-hb8aohiaEQtdP3eRINRFaLGoD9IdijEn3V-S_Wnqy8udc4LmZNHk-DSCpnyJLvoEAqMng0Epta0QB1aOXJJA1cJhECSHDhFHtioZlx8ZvAnlsxXd4q5nnAaye-XhGfocP2lNs_b1DA-tHvq2_9ne1vGeR4X1VZk3ZhTXJHIPCPL637FDbRqOkZSlgUE9NEidcg1tOZg-m6hqAtZ4uMcy-ZpjJT7_fJTiZvfqkBXfkZK_KHEW4RQwbVwZqzvPGzoPXIstP5cNy9N2Td4KzgsPJFvYTpocyS9BoJicniNA6LoinxlCAqOkAFEkrRQ_arKc8XTUfveUyn9REY1LBvzpWv3GZ3AunyUO__eD3JBHhZ3uaTSROCDBLuIZ_nzkljDKs9UgE2wWXzbh79o4RMmqiMft7Xi9to6zwbYSBtCGfnnpHEW8XvcY3X_gtDPLJpoDZ7RJKkxre5p1t2310yBnoiLw-rwBY1yBxdnZ8QWQwj88Z6Fg6z2sF4wougC3jJjf03FVkYGUxRHChWWFFfxfFMHs13IGSb-vEO3KE9rUnhOyVcw7NYj_y8QcpgYV69DPpzWiqjJYQ6LjqUaG8Zb6a9-EbbTqtYZwLCZZL7qP920KtWEeVDSKDTuSr1AWzd1zlwoWwcS0wIvC9lhHNTdg}}',
+            },
+            body: JSON.stringify({
+                query: `
+                {
+                    ${country_code}
+                    {                 
+                        title
+                        contentId
+                        url
+                        content
+                        image
+                        {
+                            url
+                        }
+                    }
+                }`                        
+            ,
+            }),
+        }
+    )
+        .then((response) => response.json())
+        .then((e) => {
+            // Handle the GraphQL response data here
+            var datas = e.data[country_code];
+     
+      datas.forEach((post) => {
+        var title = post.title;
+        var content = post.content;
+        var id = post.contentId;
+        var photo = post.image.url;
+        var url=post.url;
+    
+        
+        
+      
+        if (`{{test}}` == id) {
+            console.log("res", title);
+          $(".post{{ _.id}}")
+            .html(`<div class= "maincard" style="background-color:{{bg_color}}"><div class="sub text_align-left">             
+                 <div class="text">
+                            <div class="title " id="Heading-text-{{_.id}}" > {{Text_Title}}</div>
+                         
+                            </div><div class="  match" id='Content-text-{{_.id}}'> {{#if Text_Content '===' 'Content.'}} ${content} {{else}}{{Text_Content}}{{/if}}</div>
+                            </div>
+                           
+                            <div class = "image" id="sd-image-Align{{_.id}}"> <img id="sd-image-{{_.id}}" class="img_style" src ="${photo}" alt ="blogimage" style="height:215px"></div>
+                            <div class=" mrgn" style="text-align: {{alignment_Btn.horizontal}};"><a href="${url}" class="button btnshow{{ _.id}}" id="Btn_style{{_.id}}" >{{button}}</a></div></div></div>`);
+
+
+              if (`{{button}}` == '') {
+               
+                $(".btnshow{{ _.id}}").addClass("btn-display");
+                
+            } 
+            
+            var props = {
+                    "Text_Title": title,
+                    "Text_Content":content
+                };
+                console.log("pro",props);
+                window.BigCommerce.sendWidgetUpdate(props, "{{_.id}}");
+                      // $('.prcontent--{{_.id}}').text(title)
+                    //   console.log('hygraph2',window.BigCommerce);
+                        
+        }
+      });
+    });
+})();
+</script>
+
+
+    <script type="text/javascript">
+        (function () {
+
+          var widgetConfiguration = {{{json .}}};
+    console.log('widgetConfiguration',window.BigCommerce);
+            var editMode = false;
+            var selector = "sd-simple-text-editable-{{_.id}}";
+            var element = document.getElementById(selector);
+            if (!element) { return; }
+
+            function initializeContentEditableText () {
+                if (window.BigCommerce && window.BigCommerce.inlineEditor && window.BigCommerce.sendWidgetUpdate) {
+                    editMode = true;
+                    window.BigCommerce.inlineEditor.init({
+                        selector: "#" + selector,
+                        editMode: editMode,
+                        onBlur: function (content) {
+                            element.innerHtml = content;
+                            flushChanges(content);
+                        },
+                        onKeyup: flushChanges,
+                        toolbarItems: ['bold', 'italic', 'underline', 'strikethrough', 'link']
+                    });
+                }
+            };
+
+            function flushChanges(content) {
+                var props = {
+                    "Text_Content":content,
+                    "Text_Content":content
+                };
+                window.BigCommerce.sendWidgetUpdate(props, "{{_.id}}");
+            }
+
+            function setEditMode(data) {
+                editMode = data.editMode;
+                element.dataset.editMode = editMode;
+
+                if (window.BigCommerce && window.BigCommerce.inlineEditor) {
+                    if (editMode) {
+                        initializeContentEditableText()
+                    } else {
+                        window.BigCommerce.inlineEditor.remove("#" + selector);
+                    }
+                }
+            }
+
+            window.addEventListener('message', function (event) {
+                try {
+                    var data = JSON.parse(event.data);
+                } catch (error) {
+                    return;
+                }
+
+                [{
+                    action: 'sdk-loaded',
+                    initiator: 'PAGE_BUILDER',
+                    callback: initializeContentEditableText
+                },{
+                    action: 'toggle-edit-mode',
+                    initiator: 'PAGE_BUILDER',
+                    callback: setEditMode
+                }].forEach(function (handler) {
+                    if (data.action === handler.action && data.initiator === handler.initiator) {
+                        try { handler.callback(data); } catch (error) {}
+                    }
+                })
+            });
+
+            initializeContentEditableText();
+        })();
+    </script>
+ 
+       
+<!-- style="color:{{color}};text-align: {{text_align_content.horizontal}}; font-size: {{font_size_content.value}}{{font_size_content.type}}" -->
+<!-- style="color:{{color}}; text-align: {{text_align_Heading.horizontal}}; font-size: {{font_size_Heading.value}}{{font_size_Heading.type}}" -->
+
+
+
+

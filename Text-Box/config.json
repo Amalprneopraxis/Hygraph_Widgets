@@ -1,0 +1,256 @@
+{
+  "Text_Title": "Title.",
+  "Text_Content": "Content.",
+  "test": "Home-Right-Top",
+  "country": "cas",
+  "class": "ClassName",
+  "bg_color": "#990AE2",
+  "margin": {
+    "top": {
+      "value": "0",
+      "type": "px"
+    },
+    "right": {
+      "value": "0",
+      "type": "px"
+    },
+    "bottom": {
+      "value": "0",
+      "type": "px"
+    },
+    "left": {
+      "value": "0",
+      "type": "px"
+    }
+  },
+  "padding": {
+    "top": {
+      "value": "8",
+      "type": "px"
+    },
+    "right": {
+      "value": "24",
+      "type": "px"
+    },
+    "bottom": {
+      "value": "8",
+      "type": "px"
+    },
+    "left": {
+      "value": "24",
+      "type": "px"
+    }
+  },
+  "fontFamily_Heading": "Roobert",
+  "fontWeight_Heading": "500",
+  "fontSize_Heading": {
+    "value": 43,
+    "type": "px"
+  },
+  "fontColor_Heading": "#000000",
+  "TextStyle_Content": "custom",
+  "alignment_Heading": {
+    "horizontal": "center",
+    "vertical": "middle"
+  },
+  "margin_Heading": {
+    "top": {
+      "value": "0",
+      "type": "px"
+    },
+    "right": {
+      "value": "0",
+      "type": "px"
+    },
+    "bottom": {
+      "value": "0",
+      "type": "px"
+    },
+    "left": {
+      "value": "0",
+      "type": "px"
+    }
+  },
+  "padding_Heading": {
+    "top": {
+      "value": "0",
+      "type": "px"
+    },
+    "right": {
+      "value": "0",
+      "type": "px"
+    },
+    "bottom": {
+      "value": "0",
+      "type": "px"
+    },
+    "left": {
+      "value": "0",
+      "type": "px"
+    }
+  },
+  "fontFamily_Content": "Roobert",
+  "fontColor_Content": "#ffffff",
+  "alignment_Content": {
+    "horizontal": "center",
+    "vertical": "middle"
+  },
+  "margin_Content": {
+    "top": {
+      "value": "0",
+      "type": "px"
+    },
+    "right": {
+      "value": "0",
+      "type": "px"
+    },
+    "bottom": {
+      "value": "0",
+      "type": "px"
+    },
+    "left": {
+      "value": "0",
+      "type": "px"
+    }
+  },
+  "padding_Content": {
+    "top": {
+      "value": "0",
+      "type": "px"
+    },
+    "right": {
+      "value": "0",
+      "type": "px"
+    },
+    "bottom": {
+      "value": "0",
+      "type": "px"
+    },
+    "left": {
+      "value": "0",
+      "type": "px"
+    }
+  },
+  "textBox_desk": {
+    "visibility": "show",
+    "fontSize_Content": {
+      "value": 24,
+      "type": "px"
+    },
+    "fontWeight_Content": "500"
+  },
+  "textBox_mob": {
+    "visibility": "show",
+    "fontSize_Content": {
+      "value": 24,
+      "type": "px"
+    },
+    "fontWeight_Content": "500"
+  },
+  "imageDimensionType_img": "auto",
+  "imageHeight_img": {
+    "value": 300,
+    "type": "px"
+  },
+  "imageFit_img": "fit",
+  "imageParallax_img": "off",
+  "imageOpacity_img": 100,
+  "alignment_img": {
+    "horizontal": "center",
+    "vertical": "middle"
+  },
+  "containerMargin_img": {
+    "top": {
+      "value": "0",
+      "type": "px"
+    },
+    "right": {
+      "value": "0",
+      "type": "px"
+    },
+    "bottom": {
+      "value": "0",
+      "type": "px"
+    },
+    "left": {
+      "value": "0",
+      "type": "px"
+    }
+  },
+  "containerPadding_img": {
+    "top": {
+      "value": "0",
+      "type": "px"
+    },
+    "right": {
+      "value": "0",
+      "type": "px"
+    },
+    "bottom": {
+      "value": "0",
+      "type": "px"
+    },
+    "left": {
+      "value": "0",
+      "type": "px"
+    }
+  },
+  "borderStyle_img": "none",
+  "borderColor_img": "#000000",
+  "borderThickness_img": 1,
+  "button": "View Details",
+  "color_Btn": "#ffffff",
+  "fontSize_Btn": {
+    "value": 24,
+    "type": "px"
+  },
+  "alignment_Btn": {
+    "horizontal": "center",
+    "vertical": "middle"
+  },
+  "fontWeight_Btn": "500",
+  "margin_Btn": {
+    "top": {
+      "value": "0",
+      "type": "px"
+    },
+    "right": {
+      "value": "0",
+      "type": "px"
+    },
+    "bottom": {
+      "value": "0",
+      "type": "px"
+    },
+    "left": {
+      "value": "0",
+      "type": "px"
+    }
+  },
+  "padding_Btn": {
+    "top": {
+      "value": "0",
+      "type": "px"
+    },
+    "right": {
+      "value": "0",
+      "type": "px"
+    },
+    "bottom": {
+      "value": "0",
+      "type": "px"
+    },
+    "left": {
+      "value": "0",
+      "type": "px"
+    }
+  },
+  "textBox_Mob": {
+    "visibility": "show",
+    "backgroundColor": "#FFFFFF",
+    "fontSize_Btn": {
+      "value": 24,
+      "type": "px"
+    }
+  }
+}
